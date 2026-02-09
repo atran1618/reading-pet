@@ -50,14 +50,14 @@ export default function DashboardClients({
 
     return (
         <main className="min-h-screen flex items-center justify-center p-6">
-        <div className="w-full max-w-5x1 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-[1.25fr_0.75fr] gap-8">
             {/* Left Column */}
-            <section className="min-h-[480px]">
+            <section className="min-h-[480px] fade-up">
             <PetCard points={petPoints}/>
             </section>
 
             {/* Right column */}
-            <section className="min-h-[480px] flex flex-col justify-between">
+            <section className="min-h-[480px] flex flex-col justify-between fade-up fade-up-delay-1">
             <TodayLog onUpdate={handleTodayLogUpdate} todayPages={todayPages}/>
             <StatusBox message={statusMessage}/>
             </section>
